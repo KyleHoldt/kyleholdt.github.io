@@ -1,11 +1,61 @@
 /* Basic site-level style overrides */
 :root {
   --content-max-width: 860px;
+
+  /* Earth-tone accent overrides */
+  --bs-primary: #8a9a5b;
+  --bs-primary-rgb: 138, 154, 91;
+  --bs-link-color: #bfa77a;
+  --bs-link-hover-color: #d2be95;
+
+  /* Neutral dark grays (no blue/brown cast) */
+  --bs-body-bg: #1f1f1f;
+  --bs-body-bg-rgb: 31, 31, 31;
+  --bs-secondary-bg: #2a2a2a;
+  --bs-secondary-bg-rgb: 42, 42, 42;
+  --bs-tertiary-bg: #343434;
+  --bs-tertiary-bg-rgb: 52, 52, 52;
+  --bs-body-color: #e6e6e6;
+}
+
+[data-bs-theme="dark"] {
+  --bs-primary: #8a9a5b;
+  --bs-primary-rgb: 138, 154, 91;
+  --bs-link-color: #bfa77a;
+  --bs-link-hover-color: #d2be95;
+  --bs-body-bg: #1f1f1f;
+  --bs-body-bg-rgb: 31, 31, 31;
+  --bs-secondary-bg: #2a2a2a;
+  --bs-secondary-bg-rgb: 42, 42, 42;
+  --bs-tertiary-bg: #343434;
+  --bs-tertiary-bg-rgb: 52, 52, 52;
+  --bs-body-color: #e6e6e6;
 }
 
 #quarto-content {
   max-width: var(--content-max-width);
   margin: 0 auto;
+}
+
+.navbar,
+.bg-dark {
+  background-color: #2f3b26 !important;
+}
+
+body {
+  background-color: #1f1f1f !important;
+}
+
+a,
+.nav-link,
+.sidebar nav a {
+  color: #bfa77a;
+}
+
+a:hover,
+.nav-link:hover,
+.sidebar nav a:hover {
+  color: #d2be95;
 }
 
 .video-wrap {
